@@ -1,26 +1,23 @@
 #include "NanoSoftSensor.h" 
 
-NanoSoftSensor::NanoSoftSensor(int readings){
-	if(readings <= NUMREADINGS){
-		numreadings = readings;
+NanoSoftSensor::NanoSoftSensor(int _readings){
+	if(_readings > READINGS){
+		readings = READINGS;
 	} else {
-		numreadings = NUMREADINGS;
+		readings = _readings;
 	}
-	for (int i = 0; i < numreadings; i++){
+	for (int i = 0; i < readings; i++){
 		array[i] = 0;
 	}
 	index = 0;
 	total = 0;
 }
 
-int NanoSoftSensor::update(int value) {
+int NanoSoftSensor::update(int _value) {
 	total -= array[index];
-	array[index] = value;
+	array[index] = _value;
 	total += array[index];
-	index = (index + 1) % numreadings;
-	return total / numreadings;
-}
-
-int NanoSoftSensor::value() {
-	return total / numreadings;
+	index = (index + 1) % readings;
+	value = total / readings;
+	return value;
 }

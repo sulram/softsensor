@@ -3,19 +3,19 @@
 
 #include <Arduino.h>
 
-#define NUMREADINGS 50
+#define READINGS 30
 
 class NanoSoftSensor {
 	public:
-		NanoSoftSensor(int readings);
-		int update(int value);
-		int value();
-		int index;
-		int total;
-		int numreadings;
-		int array[NUMREADINGS];
+		NanoSoftSensor(int _readings);
+		int update(int _value);
+		int value;
 		
 	private:
+		int index;
+		int total;
+		int readings;
+		int array[READINGS];
 };
 
 #endif
