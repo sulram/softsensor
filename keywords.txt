@@ -1,0 +1,12 @@
+NanoSoftSensor	KEYWORD1
+
+array	KEYWORD2
+numreadings	KEYWORD2
+total	KEYWORD2
+index	KEYWORD2
+update	KEYWORD2
+value	KEYWORD2
+
+NUMREADINGS	LITERAL1
+
+
