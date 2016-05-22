@@ -1,22 +1,22 @@
-# Nano Soft Sensor
+# Soft Sensor
 
 This is an Arduino library for getting soft values from sensors, taking average after some readings in order to get the usual oscillating numbers from some sensors more soften.
 
 ##### Installation
 
-* After [download](https://github.com/hiperorganicos/ino-nanosoftsensor/archive/master.zip) and unzipping the file, rename the uncompressed folder to `NanoSoftSensor`
-* Check that the `NanoSoftSensor` folder contains `NanoSoftSensor.cpp` and `NanoSoftSensor.h`
-* Place the `NanoSoftSensor` library folder in your `<arduinosketchfolder>/libraries/` folder
+* After [download](https://github.com/sulram/softsensor/archive/master.zip) and unzipping the file, rename the uncompressed folder to `SoftSensor`
+* Check that the `SoftSensor` folder contains `SoftSensor.cpp` and `SoftSensor.h`
+* Place the `SoftSensor` library folder in your `<arduinosketchfolder>/libraries/` folder
 * You may need to create the libraries subfolder if its your first library
 * Restart Arduino IDE.
 
 ##### Usage
 
 ```
-#include <NanoSoftSensor.h>
+#include <SoftSensor.h>
 
-// create a NanoSoftSensor with 10 readings (maximum 30)
-NanoSoftSensor soft_ldr = NanoSoftSensor(10);
+// create a SoftSensor with 10 readings (maximum 30)
+SoftSensor soft_ldr = SoftSensor(10);
 
 void setup() {
 
