@@ -1,6 +1,6 @@
-#include "NanoSoftSensor.h" 
+#include "SoftSensor.h" 
 
-NanoSoftSensor::NanoSoftSensor(int _readings){
+SoftSensor::SoftSensor(int _readings){
 	if(_readings > READINGS){
 		readings = READINGS;
 	} else {
@@ -13,7 +13,7 @@ NanoSoftSensor::NanoSoftSensor(int _readings){
 	total = 0;
 }
 
-int NanoSoftSensor::update(int _value) {
+int SoftSensor::update(int _value) {
 	total -= array[index];
 	array[index] = _value;
 	total += array[index];
