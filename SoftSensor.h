@@ -1,13 +1,13 @@
-#ifndef NANOSOFTSENSOR_H
-#define NANOSOFTSENSOR_H
+#ifndef SOFTSENSOR_H
+#define SOFTSENSOR_H
 
 #include <Arduino.h>
 
 #define READINGS 30
 
-class NanoSoftSensor {
+class SoftSensor {
 	public:
-		NanoSoftSensor(int _readings);
+		SoftSensor(int _readings);
 		int update(int _value);
 		int value;
 		
