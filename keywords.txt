@@ -1,4 +1,4 @@
-NanoSoftSensor	KEYWORD1
+SoftSensor	KEYWORD1
 
 array	KEYWORD2
 numreadings	KEYWORD2
